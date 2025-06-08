@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The First Workshop of Large Language Models for Music @ISMIR 2025</title>
+    <title>LLM4MA: Large Language Models for Music & Audio - ISMIR 2025 Workshop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background: url('img/singapore.jpg') no-repeat center center;
+            background: url('img/korea_daejeon.webp') no-repeat center center;
             background-size: cover;
             color: #fff;
             padding: 20px 0;
@@ -41,56 +41,18 @@
             padding: 10px 0;
             margin-top: 20px;
         }
-        .schedule table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .schedule table, .schedule th, .schedule td {
-            border: 1px solid #ddd;
-        }
-        .schedule th, .schedule td {
-            padding: 10px;
-            text-align: left;
-        }
-        .schedule th {
-            background: #f4f4f4;
-        }
-        .headshot-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .headshot {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 10px;
-        }
-        .headshot img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 5px;
-        }
-        .sponsor {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .sponsor img {
-            width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
+
+    /* 添加亮红色样式 */
+    .highlight-red {
+        color: #ff4d4f;
+        font-weight: bold;
+    }        
     </style>
 </head>
 <body>
     <header>
-        <h1>Open Science for Foundation Models (SCI-FM)</h1>
-        <p>ICLR 2025 Workshop | Promoting Transparency in AI</p>
+        <h1>LLM4MA: Large Language Models for Music & Audio</h1>
+        <p>ISMIR 2025 Satellite Workshop (DDL: 26th Sept. 2025)</p>
     </header>
 
     <nav>
@@ -99,208 +61,294 @@
         <a href="#schedule">Schedule</a>
         <a href="#speakers">Speakers</a>
         <a href="#organizers">Organizers</a>
+        <a href="#venue">Venue</a>
         <a href="#sponsors">Sponsors</a>
+
     </nav>
 
     <section id="about">
-        <h2>About the Workshop</h2>
-        <p>
-            TBD
-        </p>
+      <strong>LLM4MA: Large Language Models for Music & Audio</strong> is a dedicated workshop held in <strong>Daejeon, Korea</strong>, as a <strong>satellite event to <a href="https://ismir2025.ismir.net/" target="_blank">ISMIR 2025</a></strong>.
+      LLM4MA is a dedicated workshop that explores the rapidly evolving intersection of large language models (LLMs) and music/audio understanding and generation. As LLMs transform how machines process, compose, and interpret musical content across modalities—text, audio, image, and video—this workshop provides a crucial forum for discussing advances in tokenization, long-context modeling, multimodal alignment, and controllability in music applications. It aims to foster early-stage research and community exchange on emerging methods, challenges, and ethical considerations in AI-driven music creation, especially for works not yet suited to main conference or demo tracks.
     </section>
+
+
+    <!-- <section id="topics">
+        <h2>Workshop Topics</h2>
+        <ul>
+            <li>Tokenization of Music</li>
+            <li>Long Sequence Modeling</li>
+            <li>Instruction and Reinforcement Fine-Tuning</li>
+            <li>Artistics creation and Evaluation</li>
+            <li>Industry Applications (Film, Games, Recommendation)</li>
+            <li>Enhanced Musical Diversity</li>
+            <li>Scaling Laws and Musical Emergent Abilities of Music LLMs</li>
+            <li>Dataset Design and Generalizability</li>
+            <li>Modality Extension for Acoustic and Symbolic Music</li>
+            <li>Pre-training Paradigms for Music</li>
+            <li>Inference Techniques and Prompt Engineering</li>
+            <li>In-context Learning and Chain-of-Thought Reasoning</li>
+            <li>Autonomous Music Agents</li>
+        </ul>
+    </section> -->
+
 
     <section id="submissions">
         <h2>Call for Papers</h2>
         <p>
-            The workshop invites submissions of research papers and industrial papers, ranging from preliminary research
-            results and visionary papers to full-length papers. Submissions should follow the ISMIR proceedings format and fall into
-            the following categories:
+          The LLM4MA workshop invites submissions of research and position papers that present early-stage ideas, empirical findings, or visionary perspectives at the intersection of large language models and music/audio. All submissions will be <strong>peer-reviewed</strong> under a <strong>double-blind review process</strong>, meaning that authors must anonymize their manuscripts by removing all identifying information. Submissions should follow the 
+          <a href="Paper_Template_for_ISMIR_2025_LLM4Music_Satellite_Event.zip" target="_blank">
+            Paper Template for ISMIR 2025 LLM4Music Satellite Event.zip</a> (adapted from the ISMIR 2025 style).
         </p>
+        
+        <!-- <p>
+          The LLM4MA workshop invites submissions of research papers and position papers, covering early-stage ideas, empirical findings, or visionary perspectives at the intersection of large language models and music/audio. Submissions should follow the ISMIR proceedings style and fall into the following categories:
+        </p> -->
         <ul>
-            <li><strong>Tiny / Short paper:</strong> up to 4 pages + unlimited references and appendix.</li>
-            <li><strong>Regular paper:</strong> up to 9 pages + unlimited references and appendix.</li>
-        </ul>
-        <p>
-            We invite papers on topics including, but not limited to:
-        </p>
+          <li><strong>Extended Abstracts:</strong> Up to 2 pages (excluding references and appendix); suitable for early-stage research, conceptual explorations, or in-progress work.</li>
+          <li><strong>Short Papers:</strong> Up to 4 pages (excluding references and appendix); suitable for more developed findings or implementation-focused contributions.</li>
+        </ul>        
+        <!-- <ul>
+          <li><strong>Short Papers:</strong> Up to 2 pages (excluding references and appendix); suitable for early-stage research, conceptual explorations, or in-progress work.</li>
+          <li><strong>Extended Abstracts:</strong> Up to 4 pages (excluding references and appendix); suitable for more developed findings or implementation-focused work.</li>
+        </ul> -->
+      
+        <p>We welcome contributions on topics including, but not limited to:</p>
         <ul>
-            <li><strong>Track 1</strong>: Content 1.</li>
-            <li><strong>Track 2</strong>: Content 2.</li>
-            <li><strong>Track 3</strong>: Content 3.</li>
+          <li><strong>Tokenization of Music:</strong> Novel encoding schemes for symbolic or audio representations compatible with LLMs.</li>
+          <li><strong>Long Sequence Modeling:</strong> Advancing architectures and training techniques for generating and understanding extended musical compositions.</li>
+          <li><strong>Instruction and Reinforcement Fine-Tuning:</strong> Aligning LLMs with creative music instructions, tasks, and feedback signals.</li>
+          <li><strong>Artistic Creation and Evaluation:</strong> Methods for enhancing creativity, measuring aesthetic value, and evaluating originality in AI-generated music.</li>
+          <li><strong>Industry Applications:</strong> Use cases of music/audio LLMs in film scoring, game soundtracks, music recommendation, and other commercial contexts.</li>
+          <li><strong>Enhanced Musical Diversity:</strong> Techniques to support culturally diverse, stylistically rich, and inclusive music generation.</li>
+          <li><strong>Scaling Laws and Emergent Abilities:</strong> How model scaling affects musical capabilities and emergent musical behaviors.</li>
+          <li><strong>Dataset Design and Generalizability:</strong> Strategies for building multilingual, multi-style datasets and evaluating model robustness across musical domains.</li>
+          <li><strong>Modality Extension:</strong> Enabling models to process both acoustic waveforms and symbolic music data for tasks like transcription, composition, or control.</li>
+          <li><strong>Pre-training Paradigms:</strong> Exploration of self-supervised, multi-task, or multi-modal pre-training for music/audio models.</li>
+          <li><strong>Inference and Prompt Engineering:</strong> Prompt-based control and output optimization for musical creativity and task accuracy.</li>
+          <li><strong>In-context Learning and Chain-of-Thought:</strong> Leveraging LLM reasoning and few-shot learning in musical generation or analysis tasks.</li>
+          <li><strong>Autonomous Music Agents:</strong> Systems that can independently compose, interact, and adapt to musical goals or user feedback.</li>
         </ul>
+      
+        <!-- <p> -->
+          <!-- Accepted papers will be presented as posters, with selected contributions featured in oral spotlight sessions. A small number of submissions may be highlighted for special mentions or invited for further discussion in our panel sessions. -->
+        <!-- </p> -->
         <p>
-            All accepted papers will be presented as posters. Additionally, we will select around 3 papers for short oral presentations
-            and 2 papers for outstanding paper awards with potential cash incentives.
-        </p>
+          Accepted papers will be presented as posters, with selected contributions featured in oral spotlight sessions. A small number of submissions may be highlighted for special mentions or invited for further discussion in our panel sessions.
+        </p>         
+      
         <h3>Novelty and Openness</h3>
+        <!-- <p>
+          The workshop is <strong>non-archival</strong>. We accept submissions that are under review elsewhere or intended for future conference submission. Submissions must not have been formally published at other venues. We strongly encourage open science practices — including code, datasets, checkpoints, and training pipelines — to enhance transparency and reproducibility.
+        </p> -->
         <p>
-            For novelty, the workshop does not accept submissions that have previously been published at ISMIR or other machine
-            learning or related venues. For openness, we encourage submissions with sufficient open-source resources (e.g., checkpoint,
-            code, data, training details). Accepted papers will be published on the website, but the workshop is <strong>non-archival</strong>.
-        </p>
-        <h3>Key Dates</h3>
+          We accept submissions that are under review elsewhere or intended for future conference submission. However, submissions must not have been formally published at other venues. We strongly encourage open science practices — including code, datasets, checkpoints, and training pipelines — to enhance transparency and reproducibility. Accepted papers will be published on the website, but the workshop is <strong>non-archival</strong>.
+        </p>        
+      
+        <h3>Key Dates </h3>
         <ul>
-            <li>Submission Open: January 22, 2025</li>
-            <li>
-              <del style="color: red; text-decoration: line-through;">Submission Deadline: February 10, 2025</del>
-              <br>
-              <span>Submission Deadline: February 13, 2025</span>
-            </li>
-            <li>Notifications: March 5, 2025</li>
-            <li>Camera-Ready: April 5, 2025</li>
-            <li>Workshop (Hall 4 #5): April 28, 2025</li>
+          <li>Submission Open: 6th June, 2025</li>
+          <li>Submission Deadline: 10th August, 2025</li>
+          <li>Notifications: 31st August, 2025</li>
+          <li>Camera-Ready: 14th September, 2025</li>
+          <li>Workshop: 26th September, 2025</li>
         </ul>
-        <h3>Submission Instructions</h3>
+      
+        <!-- <h3>Submission Instructions</h3>
         <ul>
-            <li>Submission format: use the <a href="https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip">ICLR 2025 paper template</a>. The appendix should be included in the same PDF as the main paper.</li>
-            <li>Submit your paper through <a href="https://openreview.net/group?id=ICLR.cc/2025/Workshop/SCI-FM#tab-recent-activity">OpenReview</a>.</li>
-        </ul>
-        <p>
-            This year, ICLR is discontinuing the separate “Tiny Papers” track, and is instead requiring each workshop to accept short (3–5 pages in ICLR format, 
-            exact page length to be determined by each workshop) paper submissions, with an eye towards inclusion; see <a href=https://iclr.cc/Conferences/2025/CallForTinyPapers>https://iclr.cc/Conferences/2025/CallForTinyPapers</a>​​ for more details. 
-            Authors of these papers will be earmarked for potential funding from ICLR, but need to submit a separate application for Financial Assistance that evaluates their eligibility. 
-            This application for Financial Assistance to attend ICLR 2025 will become available on <a href=https://iclr.cc/Conferences/2025/>https://iclr.cc/Conferences/2025/</a> at the beginning of February and close on March 2nd.
-        </p>
-    </section>
+          <li>Submission format: Please use the <a href="">ISMIR 2025 paper template</a>.</li>
+          <li>All submissions must be anonymized and submitted via the CMT platform.</li>
+          <li>There is no official proceedings, and accepted papers will be posted on the workshop website.</li>
+        </ul> -->
+      </section>
 
-    <section id="review">
-        <h2>Review</h2>
+      <section id="review">
+        <h2>Review <span style="color:#ff4d4f;">(TBD)</span></h2>
         <p>We are inviting reviewers for workshop submissions. If you are interested in reviewing, please register through:</p>
-        <iframe width="640px" height="480px" src="https://forms.office.com/e/SdYw5U75U3?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <!-- <iframe width="640px" height="480px" src="https://forms.office.com/e/SdYw5U75U3?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
+        <!-- <iframe width="640px" height="480px" src="" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
+    </section>
+      
+      
+    <section id="schedule" style="padding: 2rem 0;">
+        <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Workshop Schedule (Tentative)</h2>
+        <div class="schedule" style="overflow-x:auto;">
+          <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+            <thead style="background-color: #f2f2f2;">
+              <tr>
+                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Time</th>
+                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">09:00–09:30</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Registration</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">09:30–09:40</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Opening Talk:</strong> Welcome address and workshop overview</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">09:40–10:20</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Keynote Presentation</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">10:25–10:55</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">2–3 Oral Presentations on Accepted Papers</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px; border: 1px solid #ddd;">11:00–12:00</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Poster Session & Discussion</strong></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">12:00–12:30</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Coffee & Lunch Break</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px; border: 1px solid #ddd;">12:30–13:30</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Poster Session & Discussion</strong> </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">13:30–14:30</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">2–3 Invited Talks on Music/Audio LLM Research</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px; border: 1px solid #ddd;">14:30–15:30</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">
+                  <strong>Panel Discussion:</strong> Multimodal Music LLMs<br>
+                  <em>Host: Yinghao Ma (QMUL)</em>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">15:30–15:50</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Coffee Break</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px; border: 1px solid #ddd;">15:50–16:50</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">
+                  <strong>Panel Discussion:</strong> LLMs for Music Generation & Evaluation<br>
+                  <em>Host: Dr. Ilaria Manco (Google DeepMind)</em>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">16:50–17:00</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Closing Remarks</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+
+
+      <section id="speakers">
+        <h2>Invited Speakers <span style="color:#ff4d4f;">(TBD)</span> </h2>
+
     </section>
 
-    <section id="schedule">
-        <h2>Workshop Schedule (Tentative)</h2>
-        <div class="schedule">
-            <table>
-                <tr>
-                    <th>Time</th>
-                    <th>Activity</th>
-                </tr>
-                <tr>
-                    <td>08:00-09:00</td>
-                    <td>Registration</td>
-                </tr>
-                <tr>
-                    <td>09:00-09:10</td>
-                    <td>Opening Remarks</td>
-                </tr>
-                <tr>
-                    <td>09:10-09:40</td>
-                    <td>Keynote Talk 1: Stella Biderman (EleutherAI)</td>
-                </tr>
-                <tr>
-                    <td>09:40-10:10</td>
-                    <td>Keynote Talk 2: Junyang Lin (Alibaba)</td>
-                </tr>
-                <tr>
-                    <td>10:10-10:40</td>
-                    <td>Keynote Talk 3: Zhengzhong Liu (MBZUAI)</td>
-                </tr>
-                <tr>
-                    <td>10:40-11:50</td>
-                    <td>Oral Presentations  (With Coffee Break)</td>
-                </tr>
-                <tr>
-                    <td>11:50-13:30</td>
-                    <td>Lunch Break</td>
-                </tr>
-                <tr>
-                    <td>13:30-14:00</td>
-                    <td>Keynote Talk 4: Wenhao Huang (ByteDance)</td>
-                </tr>
-                <tr>
-                    <td>14:00-14:30</td>
-                    <td>Keynote Talk 5: Shayne Longpre (MIT)</td>
-                </tr>
-                <tr>
-                    <td>14:30-15:00</td>
-                    <td>Keynote Talk 6: Luca Soldaini (Ai2)</td>
-                </tr>
-                <tr>
-                    <td>15:00-16:00</td>
-                    <td>Poster Session (With Coffee Break)</td>
-                </tr>
-                <tr>
-                    <td>16:00-17:00</td>
-                    <td>Panel Discussion</td>
-                </tr>
-                <tr>
-                    <td>17:00-17:10</td>
-                    <td>Award Announcements & Closing Remarks</td>
-                </tr>
-            </table>
-        </div>
-    </section>
 
-        <section id="speakers">
-        <h2>Invited Speakers</h2>
-        <div class="headshot-grid">
-            <div class="headshot">
-<!--                 <img src="img/Stella.jpg" alt="Stella Biderman"> -->
-                <p>TBD (TBD)</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="organizers">
-        <h2>Organizing Committee</h2>
-        <div class="headshot-grid">
-            <div class="headshot">
-                <img src="img/Jiaheng.png" alt="Jiaheng Liu">
-                <p>Jiaheng Liu</p>
-                <p>(Nanjing University, M-A-P)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Riza.webp" alt="Riza Batista-Navarro">
-                <p>Riza Batista-Navarro</p>
-                <p>(University of Manchester)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Qian.png" alt="Qian Liu">
-                <p>Qian Liu</p>
-                <p>(TikTok)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Niklas.png" alt="Niklas Muennighoff">
-                <p>Niklas Muennighoff</p>
-                <p>(Stanford University)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Ge.jpg" alt="Ge Zhang">
-                <p>Ge Zhang</p>
-                <p>(ByteDance, M-A-P)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Yizhi.jpg" alt="Yizhi Li">
-                <p>Yizhi Li</p>
-                <p>(University of Manchester, M-A-P)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Xinyi.jpg" alt="Xinyi Wang">
-                <p>Xinyi Wang</p>
-                <p>(UC Santa Barbara)</p>
-            </div>
-            <div class="headshot">
-                <img src="img/Willie.jpg" alt="Willie Neiswanger">
-                <p>Willie Neiswanger</p>
-                <p>(USC)</p>
-            </div>
+  <section id="organizers">
+    <h2>Organizing Committee</h2>
+    <div class="headshot-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Chenghualin.png" alt="Chenghua Lin" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Prof. Chenghua Lin</p>
+        <p>University of Manchester</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Seungheon_Doh.jpg" alt="SeungHeon Doh" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Dr. SeungHeon Doh</p>
+        <p>Korea Advanced Institute of Science & Technology</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/LiumengXue.png" alt="Liumeng Xue" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Dr. Liumeng Xue</p>
+        <p>Hong Kong University of Science and Technology</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Ilaria_Manco.jpeg" alt="Ilaria Manco" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Dr. Ilaria Manco</p>
+        <p>Google DeepMind</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/profile_gus-xia_secondary.jpg" alt="Gus Xia" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Dr. Gus Xia</p>
+        <p>Mohamed bin Zayed University of Artificial Intelligence</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Xiaohuanzhou.jpeg" alt="Xiaohuan Zhou" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Xiaohuan Zhou</p>
+        <p>ByteDance</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Ge.jpg" alt="Ge Zhang" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Ge Zhang</p>
+        <p>ByteDance</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/YinghaoMa.jpg" alt="Yinghao Ma" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Yinghao Ma</p>
+        <p>Queen Mary University of London</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Yuanruibin.jpeg" alt="Ruibin Yuan" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Ruibin Yuan</p>
+        <p>Hong Kong University of Science and Technology</p>
+      </div>
+
+      <div class="headshot" style="text-align: center; width: 150px;">
+        <img src="img/Yizhi.jpg" alt="Yizhi Li" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+        <p>Yizhi Li</p>
+        <p>University of Manchester</p>
+      </div>
+
+    </div>
+  </section>
+
+      
+      <section id="venue">
+        <h2>Venue</h2>
+        <p>
+            The LLM4MA workshop will be held at the <strong>Jung Geun Mo Conference Hall (5F)</strong>, located at <strong>Korea Advanced Institute of Science & Technology(KAIST), Daejeon, Korea</strong>. 
+            This venue is shared with the main <a href="https://ismir2025.ismir.net/" target="_blank">ISMIR 2025</a> conference.
+            The hall accommodates up to 150 participants and is equipped for both oral and poster sessions.
+        </p>
+        <div style="text-align: center; margin-top: 1rem;">
+            <img src="img/venue.png" alt="Conference venue exterior" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            <img src="img/meeting_room.png" alt="Conference room interior" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            <p style="font-size: 0.9em; color: #666;">Venue views: Jung Geun Mo Conference Hall, KAIST (5F)</p>
         </div>
-    </section>
+      </section>
+      
 
     <section id="sponsors">
-        <h2>Our Sponsor</h2>
+        <h2>Our Sponsor <span style="color:#ff4d4f;">(TBD)</span></h2>
         <div class="sponsor">
-            <img src="img/bytedance.png" alt="Bytedance Logo">
+            <!-- <img src="img/bytedance.png" alt="Bytedance Logo"> -->
         </div>
+    </section>
+    
+
+  
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries, please email: <a href="mailto:yinghao.ma@qmul.ac.uk">yinghao.ma@qmul.ac.uk</a> and <a href="mailto:a43992899@gmail.com">a43992899@gmail.com</a></p>
     </section>
 
     <footer>
-        <footer>
-            <p style="font-size: 0.9em; text-align: center; margin: 10px 0;">Disclaimer: All information on this website is subject to change.</p>
-            <p>Contact us at: TBD | &copy; 2025 LLM4Music Workshop</p>
-        </footer>
+        <p style="font-size: 0.9em;">Disclaimer: All information on this website is subject to change.</p>
+        <p>&copy; 2025 LLM4MA Workshop at ISMIR | Contact: <a href="mailto:yinghao.ma@qmul.ac.uk">yinghao.ma@qmul.ac.uk</a> and <a href="mailto:a43992899@gmail.com">a43992899@gmail.com</a></p>
     </footer>
 </body>
 </html>
