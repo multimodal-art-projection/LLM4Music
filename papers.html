@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM4MA Workshop Posters</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #fafafa;
+        }
+
+        header {
+            background: url('img/korea_daejeon.webp') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 36px 16px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid #e2e2e2;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(6px);
+        }
+
+        nav a {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: #005d99;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .intro h2 {
+            font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+            margin-bottom: 12px;
+        }
+
+        .intro p {
+            margin: 0 auto;
+            max-width: 720px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .poster-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 16px 40px -24px rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .poster-card:hover,
+        .poster-card:focus-within {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 48px -22px rgba(0, 0, 0, 0.5);
+        }
+
+        .poster-preview {
+            aspect-ratio: 3 / 4;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(0, 122, 204, 0.12), rgba(0, 122, 204, 0.28));
+            border: 1px dashed rgba(0, 122, 204, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 12px;
+            color: #005d99;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .poster-title {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .poster-actions {
+            margin-top: auto;
+        }
+
+        .poster-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #007acc;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .poster-link:hover,
+        .poster-link:focus {
+            background: #005d99;
+            transform: translateY(-1px);
+        }
+
+        .poster-link span {
+            font-size: 0.85rem;
+            letter-spacing: 0.03em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 12px;
+            background: #f0f4f8;
+            color: #59738a;
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition-duration: 0 !important;
+                animation-duration: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LLM4MA Poster Gallery</h1>
+        <p>Explore accepted papers and download poster PDFs</p>
+    </header>
+
+    <nav aria-label="Primary">
+        <a href="https://m-a-p.ai/LLM4Music/index.html">Home</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#submissions">Call for Papers</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#schedule">Schedule</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#speakers">Speakers</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#organizers">Organizers</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#venue">Venue</a>
+        <a href="https://m-a-p.ai/LLM4Music/index.html#sponsors">Sponsors</a>
+    </nav>
+
+    <main>
+        <section class="intro" aria-labelledby="poster-intro">
+            <h2 id="poster-intro">Poster Session Preview</h2>
+            <p>
+                Each tile highlights a featured paper from the LLM4MA workshop. Replace the
+                placeholder PDF paths in the download buttons with the final files once uploaded
+                to the <code>posters/</code> directory.
+            </p>
+        </section>
+
+        <section aria-label="Poster gallery" class="poster-grid">
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/llm4ma_umust - Jongmin Jung.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Enhancing Automatic Chord Recognition through LLM Chain-of-Thought Reasoning</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/poster - 張志丞.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">SESEMMI for LinkedMusic: Democratizing Access to Musical Archives via Large Language Models</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/LLM4MA_Poster - Liam Pond.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">BREATH: A Bio-Radar Embodied Agent for Tonal and Human-Aware Diffusion Music Generation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/v0919_breath_final_ckeck - yunzhe wang.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">RNInfer: A Large Language Model Approach to Functional Harmonic Reasoning in Symbolic Music</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/RNInfer_LLM4Music_Poster.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">STASE: A Spatialized Text-to-Audio Synthesis Engine for Music Generation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/poster - Tutti Chi.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">From Classification to Creative Interpretation: A Multimodal AI Chain for Music Mood Understanding</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/16. Khongorzul Munkhbat poster - Khongorzul Munkhbat.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Inference-Time Control of Tonal Tension in Symbolic Music Generation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/Poster_Ebrahimzadeh_nference-Time Control of Tonal Tension in Symbolic Music Generation - Maral Ebrahimzadeh.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Vibe Sorcery: Integrating Emotion Recognition with Generative Music for Playlist Curation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/POSTER Vibe Sorcery - Isabel Urrego.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Multi-scale Transformer Language Modeling for Music Classification Tasks</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/Workshop ISMIR - MegaAudio - Lucas Rafael Gris.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Generative Feedback for Singing Voice Synthesis Evaluation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/SVS_Evaluation_Poster_20250921002618 - zoey kim.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/ISMIR poster - 王泊淼.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Evaluating Foundation Models On Timbre-Related Cognitive Tasks</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/LLM4MA_poster - Yorgos Velissaridis.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Music as Programs: Understanding Musical Structure via Program Induction</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/MusicAsPrograms - Robie Gonzales.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">WeaveMuse: An Open Agentic System for Multimodal Music Understanding and Generation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/WeaveMuse-Poster (4) - Manos Karistineos.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">LLM-enhanced contextual music triggering with explainable AI</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/poster - SYEDA FATIMA.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="poster-card">
+                <div class="poster-preview" aria-hidden="true">Poster Preview Placeholder</div>
+                <h3 class="poster-title">Weak Tokenization: A Preliminary Study of Dynamic Audio Chunking for Irregular Music Generation</h3>
+                <div class="poster-actions">
+                    <a class="poster-link" href="papers/LLM4MAposter - Weixi Zhai.pdf" target="_blank" rel="noopener">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Looking for more workshop info? <a href="https://m-a-p.ai/LLM4Music/index.html" style="color: #007acc; font-weight: 600; text-decoration: none;">Return to the main page</a>.
+    </footer>
+</body>
+</html>
