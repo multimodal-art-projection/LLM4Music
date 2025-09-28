@@ -106,12 +106,27 @@
             flex-direction: column;
             gap: 16px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
         }
 
         .poster-card:hover,
         .poster-card:focus-within {
             transform: translateY(-4px);
             box-shadow: 0 20px 48px -22px rgba(0, 0, 0, 0.5);
+        }
+
+        .poster-badge {
+            align-self: flex-start;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #ff7a18, #af002d 85%);
+            color: #fff;
+            font-size: 0.7rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 700;
+            box-shadow: 0 6px 18px -12px rgba(175, 0, 45, 0.5);
+            margin-bottom: 6px;
         }
 
         .poster-preview {
@@ -201,6 +216,7 @@
 
         <section aria-label="Poster gallery" class="poster-grid">
             <article class="poster-card">
+                <span class="poster-badge" aria-label="Best Workshop Paper Nomination">Best Workshop Paper Nomination</span>
                 <img class="poster-preview" src="poster_thumbnails/llm4ma-umust---jongmin-jung.png" alt="Poster thumbnail for Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio">
                 <h3 class="poster-title">Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio</h3>
                 <div class="poster-actions">
@@ -241,6 +257,7 @@
             </article>
 
             <article class="poster-card">
+                <span class="poster-badge" aria-label="Best Workshop Paper Award">Best Workshop Paper Award</span>
                 <img class="poster-preview" src="poster_thumbnails/rninfer-llm4music-poster.png" alt="Poster thumbnail for RNInfer: A Large Language Model Approach to Functional Harmonic Reasoning in Symbolic Music">
                 <h3 class="poster-title">RNInfer: A Large Language Model Approach to Functional Harmonic Reasoning in Symbolic Music</h3>
                 <div class="poster-actions">
@@ -311,6 +328,7 @@
             </article>
 
             <article class="poster-card">
+                <span class="poster-badge" aria-label="Best Workshop Paper Nomination">Best Workshop Paper Nomination</span>
                 <img class="poster-preview" src="poster_thumbnails/ismir-poster---.png" alt="Poster thumbnail for Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation">
                 <h3 class="poster-title">Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation</h3>
                 <div class="poster-actions">
@@ -381,6 +399,7 @@
             </article>
 
             <article class="poster-card">
+                <span class="poster-badge" aria-label="Best Workshop Paper Nomination">Best Workshop Paper Nomination</span>
                 <img class="poster-preview" src="poster_thumbnails/sarlm-poster-taheri.png" alt="Poster thumbnail for SAR-LM: SYMBOLIC AUDIO REASONING WITH LARGE LANGUAGE MODELS">
                 <h3 class="poster-title">SAR-LM: SYMBOLIC AUDIO REASONING WITH LARGE LANGUAGE MODELS</h3>
                 <div class="poster-actions">
